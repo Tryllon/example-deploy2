@@ -12,7 +12,7 @@ import Link from '@mui/material/Link';
 import MenuItem from '@mui/material/MenuItem';
 import GoogleIcon from '@mui/icons-material/Google';
 import '@fontsource/roboto/700.css';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 function Navbar() {
@@ -28,7 +28,7 @@ function Navbar() {
 
 
     return (
-        <AppBar position="static"
+        <AppBar position="fixed"
             sx={{
                 backgroundColor: 'white'
             }}
@@ -116,33 +116,42 @@ function Navbar() {
                             }}
                         >
                             <MenuItem onClick={handleCloseNavMenu}>
-                                <Link href='/'
+                                <AnchorLink
+                                    offset={'56px'}
+                                    href="#home"
                                 >
                                     <Button>
                                         HOME
                                     </Button>
-                                </Link>
+                                </AnchorLink >
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
-                                <Link href='/features'>
+                                <AnchorLink
+                                    offset={'56px'}
+                                    href="#features"
+                                >
                                     <Button>
                                         FEATURES
                                     </Button>
-                                </Link>
+                                </AnchorLink >
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
-                                <Link href='/pricing'>
+                                <AnchorLink
+                                    offset={'56px'}
+                                    href='#pricing'>
                                     <Button>
                                         PRICING
                                     </Button>
-                                </Link>
+                                </AnchorLink >
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
-                                <Link href='/contact'>
+                                <AnchorLink
+                                    offset={'56px'}
+                                    href='#contact'>
                                     <Button>
                                         CONTACT
                                     </Button>
-                                </Link>
+                                </AnchorLink >
                             </MenuItem>
                         </Menu>
                     </Box>
@@ -152,34 +161,38 @@ function Navbar() {
                             display: { xs: 'none', md: 'flex' }
                         }}
                     >
-                        <Link
-                            href='/'
+                        <AnchorLink
+                            offset={'64px'}
+                            href="#home"
                         >
                             <Button>
                                 HOME
                             </Button>
-                        </Link>
-                        <Link
-                            href='/features'
+                        </AnchorLink >
+                        <AnchorLink
+                            offset={'64px'}
+                            href="#features"
                         >
                             <Button>
                                 FEATURES
                             </Button>
-                        </Link>
-                        <Link
-                            href='/pricing'
+                        </AnchorLink >
+                        <AnchorLink
+                            offset={'64px'}
+                            href='#pricing'
                         >
                             <Button>
                                 PRICING
                             </Button>
-                        </Link>
-                        <Link
-                            href='/contact'
+                        </AnchorLink >
+                        <AnchorLink
+                            offset={'64px'}
+                            href='#contact'
                         >
                             <Button>
                                 CONTACT
                             </Button>
-                        </Link>
+                        </AnchorLink >
                     </Box>
                 </Toolbar>
             </Container>
