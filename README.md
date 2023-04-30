@@ -1,3 +1,15 @@
+# Notes app website
+
+## General info
+This project is simple Notes app website
+
+## Technologies
+Project is created with:
+* Next.js
+* TypeScript
+* Material UI
+* StoryBook
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
