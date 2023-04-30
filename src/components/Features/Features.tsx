@@ -23,10 +23,12 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function FullWidthGrid() {
     return (
         <Container
+            id='features'
         >
-            <Box sx={{
-                padding: '20px 0px'
-            }}>
+            <Box
+                sx={{
+                    padding: '20px 0px'
+                }}>
                 <Grid container spacing={2}>
                     <Grid xs={12} md={6}>
                         <Item

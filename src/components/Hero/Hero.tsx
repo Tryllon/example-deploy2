@@ -10,9 +10,9 @@ export const Hero = () => {
 
     return (
         <Box
-            id='/'
+            id='home'
             sx={{
-                backgroundColor: '#f1f3f4;'
+                backgroundColor: '#f1f3f4;',
             }}
         >
             <Container
@@ -22,7 +22,8 @@ export const Hero = () => {
                         display: { xs: 'flex', md: 'none' },
                         alignItems: 'left',
                         flexDirection: 'column',
-                        padding: '20px 0px'
+                        padding: '20px 0px',
+                        marginTop: '56px'
                     }}
                 >
                     <Box
@@ -85,7 +86,8 @@ export const Hero = () => {
                         display: { xs: 'none', md: 'flex' },
                         flexDirection: 'column',
                         alignItems: 'center',
-                        padding: '70px 0px'
+                        padding: '70px 0px',
+                        marginTop: '64px'
                     }}
                 >
                     <Box
